@@ -1,7 +1,7 @@
 ---
 - name: Add ssh key
   hosts: "{{ my_hosts | d([]) }}"
-  become: true
+  #become: true
 
   tasks:
     - name: Install public keys
