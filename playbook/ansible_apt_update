@@ -1,9 +1,9 @@
 ---
 - name: Update and upgrade apt packages
   hosts: all
-  become: true
+  #become: true
 vars:
-  become_user: kestra
+  ansible_user: kestra
 
   tasks:
     - name: Update packages with apt
