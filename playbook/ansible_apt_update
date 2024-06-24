@@ -2,6 +2,7 @@
 - name: Update and upgrade apt packages
   hosts: all
   become: true
+vars:
   become_user: kestra
 
   tasks:
@@ -9,6 +10,7 @@
       when: ansible_pkg_mgr == 'apt'
       ansible.builtin.apt:
         update_cache: true
+    
 
     - name: Update packages with yum
       when: ansible_pkg_mgr == 'yum'
