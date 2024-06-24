@@ -3,7 +3,7 @@
   hosts: all
   #become: true
   vars:
-  ansible_user: kestra
+    ansible_user: kestra
 
   tasks:
     - name: Update packages with apt
