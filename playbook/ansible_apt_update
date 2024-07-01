@@ -2,7 +2,7 @@
 - name: Update and upgrade apt packages
   hosts: all
   become: true
-  become_user: *
+  become_user: '*'
 
   tasks:
     - name: Update packages with apt
